@@ -1,0 +1,32 @@
+.post
+{
+    background-color: ivory;
+    border: black solid 2px;
+    border-radius: 8px;
+    width: 600px;
+    height: fit-content;
+    padding: 20px;
+    margin: auto;
+
+    >*:not(:last-child)
+    {
+        margin-bottom: 20px;
+    }
+
+    >h1
+    {
+        margin: 0%;
+        padding: 0%;
+    }
+    >img
+    {
+        width: 100%;
+        height: auto;
+    }
+    >p
+    {
+        margin: 0%;
+        padding: 0%;
+        text-align: center;
+    }
+}
