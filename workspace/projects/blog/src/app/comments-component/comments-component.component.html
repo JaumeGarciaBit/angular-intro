@@ -13,9 +13,9 @@
     <div class="form">
         <h2>Add your comment</h2>
         <label for="name">Name:</label>
-        <!-- <input type="text" id="formName" name="name" value="Anónimo" [(ngModel)]='m_lastUsername'> -->
+        <input type="text" id="formName" name="name" value="Anónimo" [(ngModel)]="m_lastUsername">
         <label for="text">Description:</label>
-        <!-- <textarea ng-model='m_lastDescription' name="text" id="formText" cols="30" rows="10" ></textarea> -->
+        <textarea [(ngModel)]="m_lastDescription" name="text" id="formText" cols="30" rows="10" ></textarea>
         <button (click)="onFormSubmit()">Submit</button>
     </div>
 </body>

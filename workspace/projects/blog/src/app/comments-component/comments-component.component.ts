@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {formatDate} from '@angular/common';
 
 @Component({
   selector: 'app-comments-component',
@@ -24,11 +25,14 @@ export class CommentsComponentComponent implements OnInit {
 
   onFormSubmit():void
   {
-    // let l_result = 
-    // {
-    //   name: document.getElementById
-    // }
-    console.log(this.m_lastUsername + "|" + this.m_lastDescription);
+    let l_result = 
+    {
+      name: this.m_lastUsername,
+      date: formatDate(new Date(), 'yyyy/MM/dd HH:mm', 'en'),
+      text: this.m_lastDescription
+    }
+
+    this.m_comments.push(l_result);
   }
 
   ngOnInit(): void 
